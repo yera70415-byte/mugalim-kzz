@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мұғалім kz</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background: white;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background: #2196f3;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Мұғалім kz</h1>
+
+        <p>Мұғалім туралы өз пікіріңізді қалдырыңыз</p>
+
+        <input
+            type="text"
+            id="student"
+            placeholder="Оқушының аты">
+
+        <input
+            type="text"
+            id="teacher"
+            placeholder="Мұғалімнің аты">
+
+        <select id="rating">
+            <option value="5">⭐⭐⭐⭐⭐ Өте жақсы</option>
+            <option value="4">⭐⭐⭐⭐ Жақсы</option>
+            <option value="3">⭐⭐⭐ Орташа</option>
+            <option value="2">⭐⭐ Нашар</option>
+            <option value="1">⭐ Өте нашар</option>
+        </select>
+
+        <textarea
+            id="review"
+            placeholder="Пікіріңізді жазыңыз..."></textarea>
+
+        <br>
+
+        <button onclick="sendReview()">
+            Пікірді жіберу
+        </button>
+
+    </div>
+
+ <iframe name="telegramFrame" style="display:none;"></iframe>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
